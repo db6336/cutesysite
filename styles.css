@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.background-romantic {
+    overflow: hidden;
+    animation: gradientAnimation 10s infinite alternate-reverse cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.background-inquisitive {
+    background-color: #FFE4D6;
+}
+
+.box {
+    background-color: #FACBEA;
+    padding: 20px;
+    border-radius: 10px;
+    border-color: #FFE5E5;
+    border-style: solid;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Manjari', sans-serif;
+    color: #B931FC;
+    font-size: 30px;
+    margin: 5px 0;
+    letter-spacing: 2px;
+}
+
+p {
+    color: #5D12D2;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(45deg, #ff6699, #ffccff);
+    }
+
+    25% {
+        background: linear-gradient(45deg, #ffccff, #ff6699);
+    }
+
+    50% {
+        background: linear-gradient(45deg, #ff6699, #ffccff);
+    }
+
+    75% {
+        background: linear-gradient(45deg, #ffccff, #ff6699);
+    }
+
+    100% {
+        background: linear-gradient(45deg, #ff6699, #ffccff);
+    }
+}
