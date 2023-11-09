@@ -3,15 +3,15 @@ loveBox.hide();
 
 $("title").text("who dis");
 
-password = prompt("Hold your horses! Who is my Special Guy >:(").toLowerCase();
+password = prompt("Hold your horses! Who goes there >:(").toLowerCase();
 
 if (password == "darkphantomlord" || password == "phantomlord" || password == "darkphantom") {
     $("body").addClass("background-romantic");
     $("title").text("DarkPhantomLord 💌");
     loveBox.show();
 } else if (password !== "darkphantomlord") {
-    $("title").text("Nah fam wtf is dis");
+    $("title").text("This ain't it");
     $("h3").text("Well that's awkward...")
-    $("p").html("You're not my <strong>DPL!</strong> Get outta hereeee")
+    $("p").html("Sorry, \"" + password + "\", but uh... no thanks?");
     loveBox.show();
 } 
